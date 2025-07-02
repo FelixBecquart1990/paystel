@@ -176,7 +176,7 @@ onMounted(() => {
             <v-card-title class="pa-6 pb-4">
               <div class="d-flex align-center">
                 <v-icon class="mr-3" color="primary">{{ mdiMapMarker }}</v-icon>
-                <span class="text-h5 font-weight-medium">Votre Voyage</span>
+                <span class="text-h5 font-weight-medium">{{ visitedPlaces.length > 1 ? 'Voyages' : 'Voyage' }}</span>
                 <v-spacer></v-spacer>
                 <v-chip variant="tonal" color="primary" size="small">
                   {{ visitedPlaces.length }} {{ visitedPlaces.length === 1 ? 'lieu' : 'lieux' }}
@@ -234,8 +234,7 @@ onMounted(() => {
       <v-card rounded="xl" elevation="8">
         <v-card-title class="pa-6 pb-4">
           <div class="d-flex align-center">
-            <v-icon class="mr-3" color="primary" size="32">{{ mdiEarth }}</v-icon>
-            <span class="text-h5 font-weight-medium">Ajouter une Nouvelle Aventure</span>
+            <span class="text-h5 font-weight-medium">Ajouter un voyage</span>
           </div>
         </v-card-title>
 
@@ -244,9 +243,9 @@ onMounted(() => {
         <v-card-text class="pa-6">
           <v-form @submit.prevent="addVisit">
             <v-autocomplete v-model="selectedCountry" :items="sortedCountries" item-title="nom" item-value="nom"
-              label="Choisissez votre destination" placeholder="Rechercher un pays ou territoire..." variant="outlined"
-              class="mb-6" return-object required rounded="lg" hide-details="auto" :prepend-inner-icon="mdiMagnify"
-              :menu-props="{ maxHeight: 180 }">
+              label="Destination" placeholder="
+              Pays ou territoire..." variant="outlined" class="mb-6" return-object required rounded="lg"
+              hide-details="auto" :prepend-inner-icon="mdiMagnify" :menu-props="{ maxHeight: 180 }">
               <template #item="{ props, item }">
                 <v-list-item v-bind="props" class="pa-3">
                   <v-list-item-subtitle>
