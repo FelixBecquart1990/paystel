@@ -1,13 +1,15 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import countries from '@/data/pays.json'
-import { mdiPlus, mdiMapMarker, mdiCalendar, mdiFlag, mdiDelete, mdiEarth, mdiMagnify } from '@mdi/js'
+import { mdiPlus, mdiMapMarker, mdiCalendar, mdiFlag, mdiDelete, mdiEarth, mdiMagnify, mdiParking, mdiInformation } from '@mdi/js'
 
 // Reactive data
 const dialog = ref(false)
 const selectedCountry = ref(null)
 const selectedYear = ref(new Date().getFullYear())
 const visitedPlaces = ref([])
+const userBirthYear = ref(null)
+const showBirthYearInput = ref(true)
 
 // Available years (from 1950 to current year)
 const availableYears = computed(() => {
@@ -49,6 +51,20 @@ const uniqueYears = computed(() => {
   return years.size
 })
 
+// Paystel indicator: number of countries visited divided by user age
+const paystelIndicator = computed(() => {
+  if (!userBirthYear.value || userBirthYear.value <= 0) return 0
+  const currentAge = new Date().getFullYear() - userBirthYear.value
+  if (currentAge <= 0) return 0
+  return (uniqueCountries.value / currentAge).toFixed(2)
+})
+
+// Calculate current age
+const currentAge = computed(() => {
+  if (!userBirthYear.value) return 0
+  return new Date().getFullYear() - userBirthYear.value
+})
+
 // Load visited places from localStorage
 const loadVisitedPlaces = () => {
   const stored = localStorage.getItem('visitedPlaces')
@@ -62,9 +78,36 @@ const loadVisitedPlaces = () => {
   }
 }
 
+// Load user age from localStorage
+const loadUserAge = () => {
+  const stored = localStorage.getItem('userBirthYear')
+  if (stored) {
+    try {
+      userBirthYear.value = parseInt(stored)
+      showBirthYearInput.value = false // Hide input if birth year is already set
+    } catch (error) {
+      console.error('Error loading user birth year:', error)
+      userBirthYear.value = null
+    }
+  }
+}
+
 // Save visited places to localStorage
 const saveVisitedPlaces = () => {
   localStorage.setItem('visitedPlaces', JSON.stringify(visitedPlaces.value))
+}
+
+// Save user age to localStorage
+const saveUserAge = () => {
+  if (userBirthYear.value && userBirthYear.value >= 1900 && userBirthYear.value <= new Date().getFullYear()) {
+    localStorage.setItem('userBirthYear', userBirthYear.value.toString())
+    showBirthYearInput.value = false // Hide input after saving
+  }
+}
+
+// Show birth year input
+const showBirthYearInputField = () => {
+  showBirthYearInput.value = true
 }
 
 // Add a new visited place
@@ -118,6 +161,7 @@ const closeDialog = () => {
 // Initialize on component mount
 onMounted(() => {
   loadVisitedPlaces()
+  loadUserAge()
 })
 </script>
 
@@ -127,14 +171,54 @@ onMounted(() => {
       <v-row justify="center">
         <v-col cols="12" lg="8" xl="6">
           <!-- Header Section -->
-          <div class="text-center mb-8">
+          <div class="text-center mb-10 mt-6">
             <!-- <v-icon size="48" color="primary" class="mb-3">{{ mdiEarth }}</v-icon> -->
             <h1 class="text-h3 font-weight-light mb-2 text-primary">Paystel</h1>
             <p class="text-h6 text-grey-darken-1 font-weight-light">Suivez vos aventures à travers le monde</p>
+
+            <!-- Age Input -->
+            <div v-if="showBirthYearInput" class="mt-6 d-flex justify-center">
+              <v-card class="pa-4" elevation="2" rounded="xl" max-width="400">
+                <div class="text-center mb-4">
+                  <v-icon size="24" color="info" class="mb-2">{{ mdiInformation }}</v-icon>
+                  <p class="text-body-2 text-grey-darken-1 mb-3">
+                    Pour afficher votre <strong>Indicateur Paystel</strong>, renseignez votre année de naissance.
+                  </p>
+                  <p class="text-body-2 text-grey mb-0">
+                    <em>Calcul : Nombre de pays visités ÷ Âge actuel</em>
+                  </p>
+                </div>
+                <v-text-field v-model.number="userBirthYear" label="Année de naissance" type="number" variant="outlined"
+                  rounded="lg" :min="1900" :max="new Date().getFullYear()" hide-details="auto" class="age-input mb-4" />
+                <div class="text-center">
+                  <v-btn color="primary" variant="elevated" rounded="lg"
+                    :disabled="!userBirthYear || userBirthYear < 1900 || userBirthYear > new Date().getFullYear()"
+                    @click="saveUserAge">
+                    Enregistrer
+                  </v-btn>
+                </div>
+              </v-card>
+            </div>
           </div>
 
           <!-- Stats Cards -->
           <v-row v-if="visitedPlaces.length > 0" class="mb-6">
+            <v-col cols="12" md="4">
+              <v-card class="text-center pa-4" elevation="2" rounded="xl" style="position: relative;">
+                <v-btn icon size="x-small" variant="text" color="info" style="position: absolute; top: 8px; right: 8px;"
+                  @click="showBirthYearInputField">
+                  <v-icon size="16">{{ mdiInformation }}</v-icon>
+                </v-btn>
+                <v-icon size="32" color="info" class="mb-2">{{ mdiParking }}</v-icon>
+                <div class="text-h4 font-weight-bold text-grey-darken-1">
+                  {{ userBirthYear ? paystelIndicator : '?' }}
+                </div>
+                <div class="text-body-2 text-grey-darken-1">Indicateur Paystel</div>
+                <div v-if="userBirthYear" class="text-caption text-grey mt-1">
+                  {{ uniqueCountries }} pays ÷ {{ currentAge }} ans
+                </div>
+              </v-card>
+            </v-col>
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="primary" class="mb-2">{{ mdiMapMarker }}</v-icon>
@@ -224,8 +308,8 @@ onMounted(() => {
     </v-container>
 
     <!-- Floating Action Button -->
-    <v-btn color="primary" icon style="position: fixed; bottom: 16px; right: 16px;z-index:1" size="large"
-      class="fab-custom" @click="openDialog">
+    <v-btn v-if="visitedPlaces.length" color="primary" icon style="position: fixed; bottom: 16px; right: 16px;z-index:1"
+      size="large" class="fab-custom" @click="openDialog">
       <v-icon size="28">{{ mdiPlus }}</v-icon>
     </v-btn>
 
@@ -453,6 +537,30 @@ onMounted(() => {
 .v-field--focused {
   background: rgba(255, 255, 255, 0.2) !important;
   border: 2px solid rgba(var(--v-theme-primary), 0.5) !important;
+}
+
+/* Age input specific styling */
+.age-input .v-field {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.age-input .v-field:hover {
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Info button styling */
+.v-btn.v-btn--size-x-small {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.v-btn.v-btn--size-x-small:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Buttons with glassmorphism */
