@@ -177,7 +177,7 @@ onMounted(() => {
             <p class="text-h6 text-grey-darken-1 font-weight-light">Suivez vos aventures à travers le monde</p>
 
             <!-- Age Input -->
-            <div v-if="showBirthYearInput" class="mt-6 d-flex justify-center">
+            <div v-if="showBirthYearInput && visitedPlaces.length" class="mt-6 d-flex justify-center">
               <v-card class="pa-4" elevation="2" rounded="xl" max-width="400">
                 <div class="text-center mb-4">
                   <v-icon size="24" color="info" class="mb-2">{{ mdiInformation }}</v-icon>
