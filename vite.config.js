@@ -22,6 +22,10 @@ export default defineConfig({
     }),
     vueDevTools(),
   ],
+  base: '/main/', // important for GitHub Pages!
+  build: {
+    outDir: 'docs', // 👈 this is the key change
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
