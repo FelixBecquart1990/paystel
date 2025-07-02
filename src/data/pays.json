@@ -1,0 +1,1766 @@
+[
+  {
+    "nom": "ALLEMAGNE",
+    "état": true,
+    "territoire": false,
+    "population": 82438000,
+    "km²": 357480
+  },
+  {
+    "nom": "AUTRICHE",
+    "état": true,
+    "territoire": false,
+    "population": 8121000,
+    "km²": 83856
+  },
+  {
+    "nom": "BELGIQUE",
+    "état": true,
+    "territoire": false,
+    "population": 11431000,
+    "km²": 30688
+  },
+  {
+    "nom": "BULGARIE",
+    "état": true,
+    "territoire": false,
+    "population": 6917000,
+    "km²": 110993
+  },
+  {
+    "nom": "CHYPRE",
+    "état": true,
+    "territoire": false,
+    "population": 1200000,
+    "km²": 5896
+  },
+  {
+    "nom": "CROATIE",
+    "état": true,
+    "territoire": false,
+    "population": 4038000,
+    "km²": 56542
+  },
+  {
+    "nom": "DANEMARK",
+    "état": true,
+    "territoire": false,
+    "population": 5383000,
+    "km²": 43100
+  },
+  {
+    "nom": "ESPAGNE",
+    "état": true,
+    "territoire": false,
+    "population": 46725000,
+    "km²": 504782
+  },
+  {
+    "nom": "ESTONIE",
+    "état": true,
+    "territoire": false,
+    "population": 1340000,
+    "km²": 45227
+  },
+  {
+    "nom": "FINLANDE",
+    "état": true,
+    "territoire": false,
+    "population": 5500000,
+    "km²": 338142
+  },
+  {
+    "nom": "FRANCE",
+    "état": true,
+    "territoire": false,
+    "population": 69000000,
+    "km²": 547000
+  },
+  {
+    "nom": "GRECE",
+    "état": true,
+    "territoire": false,
+    "population": 11018000,
+    "km²": 132000
+  },
+  {
+    "nom": "HONGRIE",
+    "état": true,
+    "territoire": false,
+    "population": 10182000,
+    "km²": 93032
+  },
+  {
+    "nom": "IRLANDE",
+    "état": true,
+    "territoire": false,
+    "population": 4800000,
+    "km²": 70283
+  },
+  {
+    "nom": "ITALIE",
+    "état": true,
+    "territoire": false,
+    "population": 59000000,
+    "km²": 301318
+  },
+  {
+    "nom": "LETTONIE",
+    "état": true,
+    "territoire": false,
+    "population": 1995000,
+    "km²": 64597
+  },
+  {
+    "nom": "LITUANIE",
+    "état": true,
+    "territoire": false,
+    "population": 2731000,
+    "km²": 65303
+  },
+  {
+    "nom": "LUXEMBOURG",
+    "état": true,
+    "territoire": false,
+    "population": 452000,
+    "km²": 2586
+  },
+  {
+    "nom": "MALTE",
+    "état": true,
+    "territoire": false,
+    "population": 410000,
+    "km²": 316
+  },
+  {
+    "nom": "PAYS-BAS",
+    "état": true,
+    "territoire": false,
+    "population": 17900000,
+    "km²": 33933
+  },
+  {
+    "nom": "POLOGNE",
+    "état": true,
+    "territoire": false,
+    "population": 38644000,
+    "km²": 312678
+  },
+  {
+    "nom": "PORTUGAL",
+    "état": true,
+    "territoire": false,
+    "population": 10407000,
+    "km²": 92082
+  },
+  {
+    "nom": "ROUMANIE",
+    "état": true,
+    "territoire": false,
+    "population": 21600000,
+    "km²": 238391
+  },
+  {
+    "nom": "SLOVAQUIE",
+    "état": true,
+    "territoire": false,
+    "population": 5477000,
+    "km²": 49035
+  },
+  {
+    "nom": "SLOVENIE",
+    "état": true,
+    "territoire": false,
+    "population": 1995000,
+    "km²": 20273
+  },
+  {
+    "nom": "SUEDE",
+    "état": true,
+    "territoire": false,
+    "population": 8982000,
+    "km²": 449964
+  },
+  {
+    "nom": "TCHEQUIE",
+    "état": true,
+    "territoire": false,
+    "population": 10267000,
+    "km²": 78866
+  },
+  {
+    "nom": "ISLANDE",
+    "état": true,
+    "territoire": false,
+    "population": 370000,
+    "km²": 102950
+  },
+  {
+    "nom": "LIECHTENSTEIN",
+    "état": true,
+    "territoire": false,
+    "population": 39000,
+    "km²": 160
+  },
+  {
+    "nom": "NORVEGE",
+    "état": true,
+    "territoire": false,
+    "population": 4577000,
+    "km²": 324219
+  },
+  {
+    "nom": "SUISSE",
+    "état": true,
+    "territoire": false,
+    "population": 7300000,
+    "km²": 41288
+  },
+  {
+    "nom": "ALBANIE",
+    "état": true,
+    "territoire": false,
+    "population": 3420000,
+    "km²": 28748
+  },
+  {
+    "nom": "MACEDOINE DU NORD",
+    "état": true,
+    "territoire": false,
+    "population": 1800000,
+    "km²": 25713
+  },
+  {
+    "nom": "BOSNIE-HERZEGOVINE",
+    "état": true,
+    "territoire": false,
+    "population": 4552000,
+    "km²": 51129
+  },
+  {
+    "nom": "KOSOVO",
+    "état": false,
+    "territoire": true,
+    "population": 2294000,
+    "km²": 10908
+  },
+  {
+    "nom": "MONTENEGRO",
+    "état": true,
+    "territoire": false,
+    "population": 685000,
+    "km²": 13812
+  },
+  {
+    "nom": "SERBIE",
+    "état": true,
+    "territoire": false,
+    "population": 7498000,
+    "km²": 74549
+  },
+  {
+    "nom": "ANDORRE",
+    "état": true,
+    "territoire": false,
+    "population": 66000,
+    "km²": 453
+  },
+  {
+    "nom": "CHYPRE occupée",
+    "état": false,
+    "territoire": true,
+    "population": 200000,
+    "km²": 3355
+  },
+  {
+    "nom": "GIBRALTAR",
+    "état": false,
+    "territoire": true,
+    "population": 38000,
+    "km²": 6.8
+  },
+  {
+    "nom": "MONACO",
+    "état": true,
+    "territoire": false,
+    "population": 39000,
+    "km²": 2.1
+  },
+  {
+    "nom": "ROYAUME UNI",
+    "état": true,
+    "territoire": false,
+    "population": 67200000,
+    "km²": 244100
+  },
+  {
+    "nom": "SAINT MARIN",
+    "état": true,
+    "territoire": false,
+    "population": 28000,
+    "km²": 610
+  },
+  {
+    "nom": "VATICAN",
+    "état": true,
+    "territoire": false,
+    "population": 760,
+    "km²": 0.44
+  },
+  {
+    "nom": "Enclave de Kaliningrad",
+    "état": false,
+    "territoire": true,
+    "population": 489000,
+    "km²": 225
+  },
+  {
+    "nom": "ACORES",
+    "état": false,
+    "territoire": true,
+    "population": 238000,
+    "km²": 2344
+  },
+  {
+    "nom": "ASCENSION",
+    "état": false,
+    "territoire": true,
+    "population": 1000,
+    "km²": 980
+  },
+  {
+    "nom": "BERMUDES",
+    "état": false,
+    "territoire": true,
+    "population": 65000,
+    "km²": 550
+  },
+  {
+    "nom": "CANARIES",
+    "état": false,
+    "territoire": true,
+    "population": 1716000,
+    "km²": 7273
+  },
+  {
+    "nom": "MALOUINES",
+    "état": false,
+    "territoire": true,
+    "population": 3000,
+    "km²": 12173
+  },
+  {
+    "nom": "FEROE",
+    "état": false,
+    "territoire": true,
+    "population": 54000,
+    "km²": 1396
+  },
+  {
+    "nom": "GEORGIE DU SUD",
+    "état": false,
+    "territoire": true,
+    "population": 32,
+    "km²": 3528
+  },
+  {
+    "nom": "GROENLAND",
+    "état": false,
+    "territoire": true,
+    "population": 59000,
+    "km²": 2175600
+  },
+  {
+    "nom": "MADERE",
+    "état": false,
+    "territoire": true,
+    "population": 275000,
+    "km²": 817
+  },
+  {
+    "nom": "SAINT PIERRE & MIQUELON",
+    "état": false,
+    "territoire": true,
+    "population": 6000,
+    "km²": 242
+  },
+  {
+    "nom": "SAINTE HELENE",
+    "état": false,
+    "territoire": true,
+    "population": 6000,
+    "km²": 122
+  },
+  {
+    "nom": "TRISTAN DA CUNHA",
+    "état": false,
+    "territoire": true,
+    "population": 270,
+    "km²": 100
+  },
+  {
+    "nom": "ARMENIE",
+    "état": true,
+    "territoire": false,
+    "population": 3045000,
+    "km²": 29743
+  },
+  {
+    "nom": "BIELORUSSIE",
+    "état": true,
+    "territoire": false,
+    "population": 9830000,
+    "km²": 207600
+  },
+  {
+    "nom": "GEORGIE",
+    "état": true,
+    "territoire": false,
+    "population": 3700000,
+    "km²": 69700
+  },
+  {
+    "nom": "MOLDAVIE",
+    "état": true,
+    "territoire": false,
+    "population": 3500000,
+    "km²": 33700
+  },
+  {
+    "nom": "RUSSIE",
+    "état": true,
+    "territoire": false,
+    "population": 100000000,
+    "km²": 17075400
+  },
+  {
+    "nom": "UKRAINE",
+    "état": true,
+    "territoire": false,
+    "population": 35000000,
+    "km²": 603700
+  },
+  {
+    "nom": "AZERBAIDJAN",
+    "état": true,
+    "territoire": false,
+    "population": 9591000,
+    "km²": 86600
+  },
+  {
+    "nom": "KAZAKHSTAN",
+    "état": true,
+    "territoire": false,
+    "population": 15200000,
+    "km²": 2717300
+  },
+  {
+    "nom": "KIRGHIZISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 5548000,
+    "km²": 199900
+  },
+  {
+    "nom": "OUZBEKISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 30000000,
+    "km²": 449600
+  },
+  {
+    "nom": "TADJIKISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 5200000,
+    "km²": 143100
+  },
+  {
+    "nom": "TURKMENISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 5177000,
+    "km²": 488100
+  },
+  {
+    "nom": "ETATS UNIS",
+    "état": true,
+    "territoire": false,
+    "population": 337000000,
+    "km²": 9363123
+  },
+  {
+    "nom": "CANADA",
+    "état": true,
+    "territoire": false,
+    "population": 35900000,
+    "km²": 9970610
+  },
+  {
+    "nom": "MEXIQUE",
+    "état": true,
+    "territoire": false,
+    "population": 120000000,
+    "km²": 1964382
+  },
+  {
+    "nom": "COSTA RICA",
+    "état": true,
+    "territoire": false,
+    "population": 4200000,
+    "km²": 50900
+  },
+  {
+    "nom": "GUATEMALA",
+    "état": true,
+    "territoire": false,
+    "population": 17153000,
+    "km²": 108889
+  },
+  {
+    "nom": "HONDURAS",
+    "état": true,
+    "territoire": false,
+    "population": 7200000,
+    "km²": 112000
+  },
+  {
+    "nom": "NICARAGUA",
+    "état": true,
+    "territoire": false,
+    "population": 5300000,
+    "km²": 130000
+  },
+  {
+    "nom": "PANAMA",
+    "état": true,
+    "territoire": false,
+    "population": 3300000,
+    "km²": 75517
+  },
+  {
+    "nom": "SALVADOR",
+    "état": true,
+    "territoire": false,
+    "population": 6183000,
+    "km²": 21041
+  },
+  {
+    "nom": "ANTIGUA & BARBUDA",
+    "état": true,
+    "territoire": false,
+    "population": 73000,
+    "km²": 442
+  },
+  {
+    "nom": "BAHAMAS",
+    "état": true,
+    "territoire": false,
+    "population": 310000,
+    "km²": 13939
+  },
+  {
+    "nom": "BARBADE [La -]",
+    "état": true,
+    "territoire": false,
+    "population": 270000,
+    "km²": 431
+  },
+  {
+    "nom": "BELIZE",
+    "état": true,
+    "territoire": false,
+    "population": 250000,
+    "km²": 22966
+  },
+  {
+    "nom": "DOMINIQUE [La -]",
+    "état": true,
+    "territoire": false,
+    "population": 78000,
+    "km²": 750
+  },
+  {
+    "nom": "GRENADE",
+    "état": true,
+    "territoire": false,
+    "population": 101000,
+    "km²": 345
+  },
+  {
+    "nom": "GUYANA",
+    "état": true,
+    "territoire": false,
+    "population": 773000,
+    "km²": 214970
+  },
+  {
+    "nom": "HAITI",
+    "état": true,
+    "territoire": false,
+    "population": 11400000,
+    "km²": 27750
+  },
+  {
+    "nom": "JAMAIQUE",
+    "état": true,
+    "territoire": false,
+    "population": 2800000,
+    "km²": 11000
+  },
+  {
+    "nom": "MONTSERRAT",
+    "état": false,
+    "territoire": true,
+    "population": 11000,
+    "km²": 103
+  },
+  {
+    "nom": "SAINT CHRISTOPHE & Nieves",
+    "état": true,
+    "territoire": false,
+    "population": 42000,
+    "km²": 167
+  },
+  {
+    "nom": "SAINT VINCENT & les Grenadines",
+    "état": true,
+    "territoire": false,
+    "population": 120000,
+    "km²": 389
+  },
+  {
+    "nom": "SAINTE LUCIE",
+    "état": true,
+    "territoire": false,
+    "population": 150000,
+    "km²": 616
+  },
+  {
+    "nom": "SURINAME",
+    "état": true,
+    "territoire": false,
+    "population": 480000,
+    "km²": 163000
+  },
+  {
+    "nom": "TRINITE & TOBAGO",
+    "état": true,
+    "territoire": false,
+    "population": 1500000,
+    "km²": 5218
+  },
+  {
+    "nom": "ANGUILLA",
+    "état": false,
+    "territoire": true,
+    "population": 10000,
+    "km²": 910
+  },
+  {
+    "nom": "Antilles Néerlandaises",
+    "état": false,
+    "territoire": true,
+    "population": 197000,
+    "km²": 800
+  },
+  {
+    "nom": "ARUBA",
+    "état": false,
+    "territoire": true,
+    "population": 71000,
+    "km²": 193
+  },
+  {
+    "nom": "CAÏMANES [Iles -]",
+    "état": false,
+    "territoire": true,
+    "population": 42000,
+    "km²": 259
+  },
+  {
+    "nom": "CUBA",
+    "état": true,
+    "territoire": false,
+    "population": 11300000,
+    "km²": 110861
+  },
+  {
+    "nom": "GUADELOUPE",
+    "état": false,
+    "territoire": true,
+    "population": 426000,
+    "km²": 1779
+  },
+  {
+    "nom": "ILES VIERGES Américaines",
+    "état": false,
+    "territoire": true,
+    "population": 120000,
+    "km²": 352
+  },
+  {
+    "nom": "ILES VIERGES Britanniques",
+    "état": false,
+    "territoire": true,
+    "population": 25000,
+    "km²": 151
+  },
+  {
+    "nom": "MARTINIQUE",
+    "état": false,
+    "territoire": true,
+    "population": 381000,
+    "km²": 1102
+  },
+  {
+    "nom": "PORTO RICO",
+    "état": false,
+    "territoire": true,
+    "population": 3621000,
+    "km²": 8897
+  },
+  {
+    "nom": "SAINT DOMINGUE",
+    "état": true,
+    "territoire": false,
+    "population": 10800000,
+    "km²": 48734
+  },
+  {
+    "nom": "TURKS & CAIQUES",
+    "état": false,
+    "territoire": true,
+    "population": 14000,
+    "km²": 430
+  },
+  {
+    "nom": "ARGENTINE",
+    "état": true,
+    "territoire": false,
+    "population": 37900000,
+    "km²": 2766889
+  },
+  {
+    "nom": "BRESIL",
+    "état": true,
+    "territoire": false,
+    "population": 203000000,
+    "km²": 8511965
+  },
+  {
+    "nom": "CHILI",
+    "état": true,
+    "territoire": false,
+    "population": 15600000,
+    "km²": 756626
+  },
+  {
+    "nom": "PARAGUAY",
+    "état": true,
+    "territoire": false,
+    "population": 5700000,
+    "km²": 407000
+  },
+  {
+    "nom": "URUGUAY",
+    "état": true,
+    "territoire": false,
+    "population": 3300000,
+    "km²": 176065
+  },
+  {
+    "nom": "BOLIVIE",
+    "état": true,
+    "territoire": false,
+    "population": 8600000,
+    "km²": 1098581
+  },
+  {
+    "nom": "COLOMBIE",
+    "état": true,
+    "territoire": false,
+    "population": 44600000,
+    "km²": 1141748
+  },
+  {
+    "nom": "EQUATEUR",
+    "état": true,
+    "territoire": false,
+    "population": 12800000,
+    "km²": 286561
+  },
+  {
+    "nom": "PEROU",
+    "état": true,
+    "territoire": false,
+    "population": 29900000,
+    "km²": 1285216
+  },
+  {
+    "nom": "VENEZUELA",
+    "état": true,
+    "territoire": false,
+    "population": 29278000,
+    "km²": 912045
+  },
+  {
+    "nom": "GUYANE",
+    "état": false,
+    "territoire": true,
+    "population": 288000,
+    "km²": 83534
+  },
+  {
+    "nom": "JAPON",
+    "état": true,
+    "territoire": false,
+    "population": 124300000,
+    "km²": 377864
+  },
+  {
+    "nom": "BIRMANIE",
+    "état": true,
+    "territoire": false,
+    "population": 55000000,
+    "km²": 676578
+  },
+  {
+    "nom": "BRUNEI",
+    "état": true,
+    "territoire": false,
+    "population": 350000,
+    "km²": 5765
+  },
+  {
+    "nom": "CAMBODGE",
+    "état": true,
+    "territoire": false,
+    "population": 12800000,
+    "km²": 181035
+  },
+  {
+    "nom": "INDONESIE",
+    "état": true,
+    "territoire": false,
+    "population": 279000000,
+    "km²": 1904569
+  },
+  {
+    "nom": "LAOS",
+    "état": true,
+    "territoire": false,
+    "population": 6436000,
+    "km²": 236800
+  },
+  {
+    "nom": "MALAISIE",
+    "état": true,
+    "territoire": false,
+    "population": 33000000,
+    "km²": 329758
+  },
+  {
+    "nom": "PHILIPPINES",
+    "état": true,
+    "territoire": false,
+    "population": 108000000,
+    "km²": 299754
+  },
+  {
+    "nom": "SINGAPOUR",
+    "état": true,
+    "territoire": false,
+    "population": 6000000,
+    "km²": 685
+  },
+  {
+    "nom": "THAILANDE",
+    "état": true,
+    "territoire": false,
+    "population": 69000000,
+    "km²": 513115
+  },
+  {
+    "nom": "VIETNAM",
+    "état": true,
+    "territoire": false,
+    "population": 93000000,
+    "km²": 331689
+  },
+  {
+    "nom": "FORMOSE alias Taiwan",
+    "état": true,
+    "territoire": false,
+    "population": 23600000,
+    "km²": 36200
+  },
+  {
+    "nom": "COREE SUD",
+    "état": true,
+    "territoire": false,
+    "population": 51800000,
+    "km²": 99484
+  },
+  {
+    "nom": "COREE NORD",
+    "état": true,
+    "territoire": false,
+    "population": 25800000,
+    "km²": 120538
+  },
+  {
+    "nom": "INDE",
+    "état": true,
+    "territoire": false,
+    "population": 1277804000,
+    "km²": 3287263
+  },
+  {
+    "nom": "CHINE continentale",
+    "état": true,
+    "territoire": false,
+    "population": 1408000000,
+    "km²": 9572900
+  },
+  {
+    "nom": "HONG KONG",
+    "état": false,
+    "territoire": true,
+    "population": 7500000,
+    "km²": 1070
+  },
+  {
+    "nom": "MACAO",
+    "état": false,
+    "territoire": true,
+    "population": 510000,
+    "km²": 270
+  },
+  {
+    "nom": "AFGHANISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 38000000,
+    "km²": 647497
+  },
+  {
+    "nom": "BANGLADESH",
+    "état": true,
+    "territoire": false,
+    "population": 165000000,
+    "km²": 143998
+  },
+  {
+    "nom": "BHOUTAN",
+    "état": true,
+    "territoire": false,
+    "population": 696000,
+    "km²": 47000
+  },
+  {
+    "nom": "MALDIVES",
+    "état": true,
+    "territoire": false,
+    "population": 696000,
+    "km²": 298
+  },
+  {
+    "nom": "MONGOLIE",
+    "état": true,
+    "territoire": false,
+    "population": 3100000,
+    "km²": 1565000
+  },
+  {
+    "nom": "NEPAL",
+    "état": true,
+    "territoire": false,
+    "population": 30000000,
+    "km²": 141000
+  },
+  {
+    "nom": "PAKISTAN",
+    "état": true,
+    "territoire": false,
+    "population": 241000000,
+    "km²": 796095
+  },
+  {
+    "nom": "SRI LANKA",
+    "état": true,
+    "territoire": false,
+    "population": 20653000,
+    "km²": 65610
+  },
+  {
+    "nom": "TIMOR Oriental",
+    "état": true,
+    "territoire": false,
+    "population": 2000000,
+    "km²": 14874
+  },
+  {
+    "nom": "AUSTRALIE",
+    "état": true,
+    "territoire": false,
+    "population": 20700000,
+    "km²": 7686848
+  },
+  {
+    "nom": "NOUVELLE ZELANDE",
+    "état": true,
+    "territoire": false,
+    "population": 3530000,
+    "km²": 270534
+  },
+  {
+    "nom": "ASHMORE & CARTIER Islands",
+    "état": false,
+    "territoire": true,
+    "population": null,
+    "km²": null
+  },
+  {
+    "nom": "CHRISTMAS Island",
+    "état": false,
+    "territoire": true,
+    "population": 1000,
+    "km²": null
+  },
+  {
+    "nom": "CLIPPERTON",
+    "état": false,
+    "territoire": true,
+    "population": 0,
+    "km²": 270
+  },
+  {
+    "nom": "COCOS-[KEELING]",
+    "état": false,
+    "territoire": true,
+    "population": 1000,
+    "km²": null
+  },
+  {
+    "nom": "COOK",
+    "état": false,
+    "territoire": true,
+    "population": 20000,
+    "km²": null
+  },
+  {
+    "nom": "CORAL SEA Islands Territory",
+    "état": false,
+    "territoire": true,
+    "population": null,
+    "km²": null
+  },
+  {
+    "nom": "FIDJI",
+    "état": true,
+    "territoire": false,
+    "population": 775000,
+    "km²": 18274
+  },
+  {
+    "nom": "GUAM",
+    "état": false,
+    "territoire": true,
+    "population": 133000,
+    "km²": 549
+  },
+  {
+    "nom": "HEARD & McDONALD Islands",
+    "état": false,
+    "territoire": true,
+    "population": 0,
+    "km²": null
+  },
+  {
+    "nom": "KIRIBATI",
+    "état": true,
+    "territoire": false,
+    "population": 110000,
+    "km²": 830
+  },
+  {
+    "nom": "MARIANNES du Nord",
+    "état": false,
+    "territoire": true,
+    "population": null,
+    "km²": null
+  },
+  {
+    "nom": "MARSHALL",
+    "état": true,
+    "territoire": false,
+    "population": 68000,
+    "km²": 182
+  },
+  {
+    "nom": "MICRONESIE",
+    "état": true,
+    "territoire": false,
+    "population": 172000,
+    "km²": 707
+  },
+  {
+    "nom": "NAURU",
+    "état": true,
+    "territoire": false,
+    "population": 11000,
+    "km²": 210
+  },
+  {
+    "nom": "NIUE",
+    "état": false,
+    "territoire": true,
+    "population": 2000,
+    "km²": null
+  },
+  {
+    "nom": "NORFOLK Island",
+    "état": false,
+    "territoire": true,
+    "population": 2000,
+    "km²": 510
+  },
+  {
+    "nom": "NOUVELLE CALEDONIE",
+    "état": false,
+    "territoire": true,
+    "population": 222000,
+    "km²": 19058
+  },
+  {
+    "nom": "PALAOS",
+    "état": true,
+    "territoire": false,
+    "population": 20000,
+    "km²": 489
+  },
+  {
+    "nom": "PAPOUASIE NOUVELLE GUINEE",
+    "état": true,
+    "territoire": false,
+    "population": 5800000,
+    "km²": 463000
+  },
+  {
+    "nom": "PITCAIRN Islands",
+    "état": false,
+    "territoire": true,
+    "population": 0,
+    "km²": null
+  },
+  {
+    "nom": "POLYNESIE FRANCAISE",
+    "état": false,
+    "territoire": true,
+    "population": 245000,
+    "km²": 4000
+  },
+  {
+    "nom": "SALOMON [îles -]",
+    "état": true,
+    "territoire": false,
+    "population": 320000,
+    "km²": 28500
+  },
+  {
+    "nom": "SAMOA [ex-Occidentales]",
+    "état": true,
+    "territoire": false,
+    "population": 171000,
+    "km²": 2830
+  },
+  {
+    "nom": "SAMOA AMERICAIN",
+    "état": false,
+    "territoire": true,
+    "population": 100000,
+    "km²": null
+  },
+  {
+    "nom": "TOKELAOU",
+    "état": false,
+    "territoire": true,
+    "population": 1000,
+    "km²": null
+  },
+  {
+    "nom": "TONGA",
+    "état": true,
+    "territoire": false,
+    "population": 104000,
+    "km²": 750
+  },
+  {
+    "nom": "TUVALU",
+    "état": true,
+    "territoire": false,
+    "population": 11000,
+    "km²": 260
+  },
+  {
+    "nom": "VANUATU",
+    "état": true,
+    "territoire": false,
+    "population": 169000,
+    "km²": 12190
+  },
+  {
+    "nom": "WALLIS & FUTUNA",
+    "état": false,
+    "territoire": true,
+    "population": 13000,
+    "km²": 140
+  },
+  {
+    "nom": "ARABIE SEOUDITE",
+    "état": true,
+    "territoire": false,
+    "population": 28000000,
+    "km²": 2150000
+  },
+  {
+    "nom": "BAHREIN",
+    "état": true,
+    "territoire": false,
+    "population": 1282000,
+    "km²": 665
+  },
+  {
+    "nom": "EMIRATS ARABES UNIS",
+    "état": true,
+    "territoire": false,
+    "population": 9500000,
+    "km²": 91700
+  },
+  {
+    "nom": "KOWEIT",
+    "état": true,
+    "territoire": false,
+    "population": null,
+    "km²": 17818
+  },
+  {
+    "nom": "OMAN",
+    "état": true,
+    "territoire": false,
+    "population": 3100000,
+    "km²": 309500
+  },
+  {
+    "nom": "QATAR",
+    "état": true,
+    "territoire": false,
+    "population": 2800000,
+    "km²": 11521
+  },
+  {
+    "nom": "IRAK",
+    "état": true,
+    "territoire": false,
+    "population": 31454000,
+    "km²": 438320
+  },
+  {
+    "nom": "IRAN",
+    "état": true,
+    "territoire": false,
+    "population": 89000000,
+    "km²": 1648195
+  },
+  {
+    "nom": "ISRAEL",
+    "état": true,
+    "territoire": false,
+    "population": 8750000,
+    "km²": 22140
+  },
+  {
+    "nom": "JORDANIE",
+    "état": true,
+    "territoire": false,
+    "population": 6475000,
+    "km²": 84394
+  },
+  {
+    "nom": "LIBAN",
+    "état": true,
+    "territoire": false,
+    "population": 6200000,
+    "km²": 10452
+  },
+  {
+    "nom": "PALESTINE (Cisjordanie)",
+    "état": false,
+    "territoire": true,
+    "population": 4258000,
+    "km²": 6236
+  },
+  {
+    "nom": "GAZA",
+    "état": false,
+    "territoire": true,
+    "population": 2300000,
+    "km²": 365
+  },
+  {
+    "nom": "SYRIE",
+    "état": true,
+    "territoire": false,
+    "population": 22516000,
+    "km²": 185180
+  },
+  {
+    "nom": "TURQUIE",
+    "état": true,
+    "territoire": false,
+    "population": 82000000,
+    "km²": 774815
+  },
+  {
+    "nom": "YEMEN",
+    "état": true,
+    "territoire": false,
+    "population": 27000000,
+    "km²": 528000
+  },
+  {
+    "nom": "ALGERIE",
+    "état": true,
+    "territoire": false,
+    "population": 47000000,
+    "km²": 2381741
+  },
+  {
+    "nom": "MAROC",
+    "état": true,
+    "territoire": false,
+    "population": 38700000,
+    "km²": 447000
+  },
+  {
+    "nom": "MAROC ESPAGNOL",
+    "état": false,
+    "territoire": true,
+    "population": 145000,
+    "km²": 190
+  },
+  {
+    "nom": "SAHARA Occidental",
+    "état": false,
+    "territoire": true,
+    "population": 600000,
+    "km²": 263850
+  },
+  {
+    "nom": "TUNISIE",
+    "état": true,
+    "territoire": false,
+    "population": 10582000,
+    "km²": 164150
+  },
+  {
+    "nom": "EGYPTE",
+    "état": true,
+    "territoire": false,
+    "population": 106000000,
+    "km²": 1001449
+  },
+  {
+    "nom": "LIBYE",
+    "état": true,
+    "territoire": false,
+    "population": 6548000,
+    "km²": 1759540
+  },
+  {
+    "nom": "BENIN",
+    "état": true,
+    "territoire": false,
+    "population": 10600000,
+    "km²": 112622
+  },
+  {
+    "nom": "BURKINA FASO",
+    "état": true,
+    "territoire": false,
+    "population": 13700000,
+    "km²": 274122
+  },
+  {
+    "nom": "BURUNDI",
+    "état": true,
+    "territoire": false,
+    "population": 11900000,
+    "km²": 27834
+  },
+  {
+    "nom": "CAMEROUN",
+    "état": true,
+    "territoire": false,
+    "population": 30000000,
+    "km²": 474442
+  },
+  {
+    "nom": "CENTRAFRIQUE",
+    "état": true,
+    "territoire": false,
+    "population": 4300000,
+    "km²": 622984
+  },
+  {
+    "nom": "CONGO Brazza",
+    "état": true,
+    "territoire": false,
+    "population": 4111000,
+    "km²": 342000
+  },
+  {
+    "nom": "CONGO RDC",
+    "état": true,
+    "territoire": false,
+    "population": 109000000,
+    "km²": 2345409
+  },
+  {
+    "nom": "COTE D'IVOIRE",
+    "état": true,
+    "territoire": false,
+    "population": 31900000,
+    "km²": 322463
+  },
+  {
+    "nom": "DJIBOUTI",
+    "état": true,
+    "territoire": false,
+    "population": 879000,
+    "km²": 23000
+  },
+  {
+    "nom": "GABON",
+    "état": true,
+    "territoire": false,
+    "population": 2300000,
+    "km²": 267667
+  },
+  {
+    "nom": "GUINEE",
+    "état": true,
+    "territoire": false,
+    "population": 9400000,
+    "km²": 245857
+  },
+  {
+    "nom": "GUINEE EQUATORIALE",
+    "état": true,
+    "territoire": false,
+    "population": 616000,
+    "km²": 28051
+  },
+  {
+    "nom": "MADAGASCAR",
+    "état": true,
+    "territoire": false,
+    "population": 32000000,
+    "km²": 587040
+  },
+  {
+    "nom": "MALI",
+    "état": true,
+    "territoire": false,
+    "population": 14850000,
+    "km²": 1240192
+  },
+  {
+    "nom": "MAURITANIE",
+    "état": true,
+    "territoire": false,
+    "population": 3100000,
+    "km²": 1030700
+  },
+  {
+    "nom": "NIGER",
+    "état": true,
+    "territoire": false,
+    "population": 26000000,
+    "km²": 1267000
+  },
+  {
+    "nom": "RUANDA",
+    "état": true,
+    "territoire": false,
+    "population": 13000000,
+    "km²": 26338
+  },
+  {
+    "nom": "SENEGAL",
+    "état": true,
+    "territoire": false,
+    "population": 18000000,
+    "km²": 196720
+  },
+  {
+    "nom": "TCHAD",
+    "état": true,
+    "territoire": false,
+    "population": 16000000,
+    "km²": 1284200
+  },
+  {
+    "nom": "TOGO",
+    "état": true,
+    "territoire": false,
+    "population": 6300000,
+    "km²": 56785
+  },
+  {
+    "nom": "Tromelin",
+    "état": false,
+    "territoire": true,
+    "population": null,
+    "km²": 100
+  },
+  {
+    "nom": "ANGOLA",
+    "état": true,
+    "territoire": false,
+    "population": 24000000,
+    "km²": 1246700
+  },
+  {
+    "nom": "CAP VERT",
+    "état": true,
+    "territoire": false,
+    "population": 530000,
+    "km²": 4033
+  },
+  {
+    "nom": "ERYTHREE",
+    "état": true,
+    "territoire": false,
+    "population": 6118000,
+    "km²": 117600
+  },
+  {
+    "nom": "ETHIOPIE",
+    "état": true,
+    "territoire": false,
+    "population": 114000000,
+    "km²": 1104300
+  },
+  {
+    "nom": "GAMBIE",
+    "état": true,
+    "territoire": false,
+    "population": 1751000,
+    "km²": 11300
+  },
+  {
+    "nom": "GHANA",
+    "état": true,
+    "territoire": false,
+    "population": 23000000,
+    "km²": 238537
+  },
+  {
+    "nom": "GUINEE BISSAO",
+    "état": true,
+    "territoire": false,
+    "population": 1600000,
+    "km²": 36120
+  },
+  {
+    "nom": "KENYA",
+    "état": true,
+    "territoire": false,
+    "population": 53000000,
+    "km²": 569259
+  },
+  {
+    "nom": "LIBERIA",
+    "état": true,
+    "territoire": false,
+    "population": 3300000,
+    "km²": 111370
+  },
+  {
+    "nom": "MALAWI",
+    "état": true,
+    "territoire": false,
+    "population": 16000000,
+    "km²": 118480
+  },
+  {
+    "nom": "MOZAMBIQUE",
+    "état": true,
+    "territoire": false,
+    "population": 19800000,
+    "km²": 801590
+  },
+  {
+    "nom": "NIGERIA",
+    "état": true,
+    "territoire": false,
+    "population": 222000000,
+    "km²": 923768
+  },
+  {
+    "nom": "OUGANDA",
+    "état": true,
+    "territoire": false,
+    "population": 38760000,
+    "km²": 197000
+  },
+  {
+    "nom": "SAO TOME & PRINCIPE",
+    "état": true,
+    "territoire": false,
+    "population": 176000,
+    "km²": 964
+  },
+  {
+    "nom": "SIERRA LEONE",
+    "état": true,
+    "territoire": false,
+    "population": 8000000,
+    "km²": 71740
+  },
+  {
+    "nom": "SOMALIE",
+    "état": true,
+    "territoire": false,
+    "population": 6425000,
+    "km²": 637657
+  },
+  {
+    "nom": "Puntland",
+    "état": false,
+    "territoire": true,
+    "population": 1750000,
+    "km²": null
+  },
+  {
+    "nom": "Somaliland",
+    "état": false,
+    "territoire": true,
+    "population": 1750000,
+    "km²": null
+  },
+  {
+    "nom": "SOUDAN [du Nord]",
+    "état": true,
+    "territoire": false,
+    "population": 36300000,
+    "km²": 1876810
+  },
+  {
+    "nom": "SOUDAN DU SUD",
+    "état": true,
+    "territoire": false,
+    "population": 9000000,
+    "km²": 629000
+  },
+  {
+    "nom": "TANZANIE",
+    "état": true,
+    "territoire": false,
+    "population": 59000000,
+    "km²": 982849
+  },
+  {
+    "nom": "AFRIQUE DU SUD",
+    "état": true,
+    "territoire": false,
+    "population": 48000000,
+    "km²": 1219912
+  },
+  {
+    "nom": "BOTSWANA",
+    "état": true,
+    "territoire": false,
+    "population": 2600000,
+    "km²": 581730
+  },
+  {
+    "nom": "CHAGOS Islands",
+    "état": false,
+    "territoire": true,
+    "population": 4000,
+    "km²": null
+  },
+  {
+    "nom": "COMORES",
+    "état": true,
+    "territoire": false,
+    "population": 753000,
+    "km²": 2171
+  },
+  {
+    "nom": "ESWATINI ex-Swaziland",
+    "état": true,
+    "territoire": false,
+    "population": 1130000,
+    "km²": 17363
+  },
+  {
+    "nom": "LESOTHO",
+    "état": true,
+    "territoire": false,
+    "population": 1795000,
+    "km²": 30355
+  },
+  {
+    "nom": "MAURICE (& Rodrigues)",
+    "état": true,
+    "territoire": false,
+    "population": 1240000,
+    "km²": 1860
+  },
+  {
+    "nom": "MAYOTTE",
+    "état": false,
+    "territoire": true,
+    "population": 310000,
+    "km²": 376
+  },
+  {
+    "nom": "NAMIBIE",
+    "état": true,
+    "territoire": false,
+    "population": 2600000,
+    "km²": 825418
+  },
+  {
+    "nom": "REUNION",
+    "état": false,
+    "territoire": true,
+    "population": 716000,
+    "km²": 2510
+  },
+  {
+    "nom": "SEYCHELLES",
+    "état": true,
+    "territoire": false,
+    "population": 81000,
+    "km²": 277
+  },
+  {
+    "nom": "ZAMBIE",
+    "état": true,
+    "territoire": false,
+    "population": 11670000,
+    "km²": 752614
+  },
+  {
+    "nom": "ZIMBABWE",
+    "état": true,
+    "territoire": false,
+    "population": 12700000,
+    "km²": 390580
+  }
+]
