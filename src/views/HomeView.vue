@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed, onMounted } from 'vue'
 import countries from '@/data/pays.json'
-import { mdiPlus, mdiMapMarker, mdiCalendar, mdiFlag, mdiDelete, mdiEarth, mdiAirplane } from '@mdi/js'
+import { mdiPlus, mdiMapMarker, mdiCalendar, mdiFlag, mdiDelete, mdiEarth, mdiMagnify } from '@mdi/js'
 
 // Reactive data
 const dialog = ref(false)
@@ -161,18 +161,18 @@ onMounted(() => {
           <!-- Visited Places List -->
           <div v-if="visitedPlaces.length === 0" class="empty-state">
             <v-card class="text-center pa-12" elevation="0" color="grey-lighten-5" rounded="xl">
-              <v-icon size="80" color="grey-lighten-1" class="mb-4">{{ mdiAirplane }}</v-icon>
+              <v-icon size="80" color="grey-lighten-1" class="mb-4">{{ mdiEarth }}</v-icon>
               <h3 class="text-h5 text-grey-darken-1 mb-3 font-weight-medium">Prêt pour votre première aventure ?</h3>
-              <p class="text-body-1 text-grey mb-6">Commencez à construire vos souvenirs de voyage en ajoutant votre première destination
+              <p class="text-body-1 text-grey mb-6">Commencez à construire vos souvenirs de voyage en ajoutant votre
+                première destination
               </p>
               <v-btn color="primary" size="large" rounded="pill" @click="openDialog">
-                <v-icon start>{{ mdiPlus }}</v-icon>
-                Ajouter Votre Premier Voyage
+                Ajouter
               </v-btn>
             </v-card>
           </div>
 
-          <v-card v-else elevation="3" rounded="xl" class="overflow-hidden">
+          <v-card v-else elevation="3" rounded="xl" class="overflow-hidden mb-16">
             <v-card-title class="pa-6 pb-4">
               <div class="d-flex align-center">
                 <v-icon class="mr-3" color="primary">{{ mdiMapMarker }}</v-icon>
@@ -189,13 +189,7 @@ onMounted(() => {
             <v-list class="pa-0">
               <v-list-item v-for="(visit, index) in sortedVisitedPlaces" :key="visit.id" class="visit-item pa-6"
                 :class="{ 'border-bottom': index < sortedVisitedPlaces.length - 1 }">
-                <template #prepend>
-                  <v-avatar size="56" :color="visit.country.état ? 'green-lighten-4' : 'orange-lighten-4'">
-                    <v-icon :color="visit.country.état ? 'green-darken-2' : 'orange-darken-2'" size="28">
-                      {{ mdiFlag }}
-                    </v-icon>
-                  </v-avatar>
-                </template>
+
 
                 <div class="flex-grow-1 ml-4">
                   <v-list-item-title class="text-h6 font-weight-medium mb-1">
@@ -203,7 +197,7 @@ onMounted(() => {
                   </v-list-item-title>
 
                   <div class="d-flex flex-wrap gap-2 mb-2">
-                    <v-chip size="small" variant="tonal" color="primary" :prepend-icon="mdiCalendar">
+                    <v-chip size="small" class="mr-2" variant="tonal" color="primary" :prepend-icon="mdiCalendar">
                       {{ visit.year }}
                     </v-chip>
                     <v-chip size="small" :color="visit.country.état ? 'success' : 'warning'" variant="flat">
@@ -230,17 +224,17 @@ onMounted(() => {
     </v-container>
 
     <!-- Floating Action Button -->
-    <v-btn color="primary" icon style="position: fixed; bottom: 16px; right: 16px;" size="large" class="fab-custom"
-      @click="openDialog">
+    <v-btn color="primary" icon style="position: fixed; bottom: 16px; right: 16px;z-index:1" size="large"
+      class="fab-custom" @click="openDialog">
       <v-icon size="28">{{ mdiPlus }}</v-icon>
     </v-btn>
 
     <!-- Add Visit Dialog -->
-    <v-dialog v-model="dialog" max-width="600px" persistent>
+    <v-dialog v-model="dialog" max-width="600px">
       <v-card rounded="xl" elevation="8">
         <v-card-title class="pa-6 pb-4">
           <div class="d-flex align-center">
-            <v-icon class="mr-3" color="primary" size="32">{{ mdiAirplane }}</v-icon>
+            <v-icon class="mr-3" color="primary" size="32">{{ mdiEarth }}</v-icon>
             <span class="text-h5 font-weight-medium">Ajouter une Nouvelle Aventure</span>
           </div>
         </v-card-title>
@@ -251,19 +245,12 @@ onMounted(() => {
           <v-form @submit.prevent="addVisit">
             <v-autocomplete v-model="selectedCountry" :items="sortedCountries" item-title="nom" item-value="nom"
               label="Choisissez votre destination" placeholder="Rechercher un pays ou territoire..." variant="outlined"
-              class="mb-6" return-object required rounded="lg" hide-details="auto" prepend-inner-icon="mdi-magnify">
+              class="mb-6" return-object required rounded="lg" hide-details="auto" :prepend-inner-icon="mdiMagnify"
+              :menu-props="{ maxHeight: 180 }">
               <template #item="{ props, item }">
                 <v-list-item v-bind="props" class="pa-3">
-                  <template #prepend>
-                    <v-avatar size="32" :color="item.raw.état ? 'green-lighten-4' : 'orange-lighten-4'">
-                      <v-icon :color="item.raw.état ? 'green-darken-2' : 'orange-darken-2'" size="18">
-                        {{ mdiFlag }}
-                      </v-icon>
-                    </v-avatar>
-                  </template>
-                  <v-list-item-title class="font-weight-medium">{{ item.raw.nom }}</v-list-item-title>
                   <v-list-item-subtitle>
-                    <v-chip size="x-small" :color="item.raw.état ? 'success' : 'warning'" variant="flat">
+                    <v-chip size="x-small" class="mt-1" :color="item.raw.état ? 'success' : 'warning'" variant="flat">
                       {{ item.raw.état ? 'Pays' : 'Territoire' }}
                     </v-chip>
                   </v-list-item-subtitle>
@@ -280,13 +267,12 @@ onMounted(() => {
 
         <v-card-actions class="pa-6">
           <v-spacer />
-          <v-btn variant="text" size="large" @click="closeDialog" class="mr-3">
+          <v-btn variant="text" size="large" @click="closeDialog" class="mr-3" rounded="lg">
             Annuler
           </v-btn>
           <v-btn color="primary" variant="elevated" size="large" :disabled="!selectedCountry" @click="addVisit"
-            rounded="pill">
-            <v-icon start>{{ mdiPlus }}</v-icon>
-            Ajouter au Journal
+            rounded="lg">
+            Ajouter
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -429,12 +415,28 @@ onMounted(() => {
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Dialog glassmorphism */
+/* Dialog glassmorphism with gradient background */
 .v-dialog .v-card {
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%) !important;
   backdrop-filter: blur(25px) !important;
   border: 1px solid rgba(255, 255, 255, 0.4) !important;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2) !important;
+  position: relative;
+}
+
+.v-dialog .v-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.2) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+  border-radius: inherit;
 }
 
 /* Form inputs with glassmorphism */

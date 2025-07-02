@@ -20,7 +20,7 @@ export default createVuetify({
     messages: { en }
   },
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
     themes: {
       light: {
         colors: {
