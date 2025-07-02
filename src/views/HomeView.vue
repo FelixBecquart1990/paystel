@@ -128,8 +128,8 @@ onMounted(() => {
         <v-col cols="12" lg="8" xl="6">
           <!-- Header Section -->
           <div class="text-center mb-8">
-            <v-icon size="48" color="primary" class="mb-3">{{ mdiEarth }}</v-icon>
-            <h1 class="text-h3 font-weight-light mb-2 text-primary">Journal de Voyage</h1>
+            <!-- <v-icon size="48" color="primary" class="mb-3">{{ mdiEarth }}</v-icon> -->
+            <h1 class="text-h3 font-weight-light mb-2 text-primary">Paystel</h1>
             <p class="text-h6 text-grey-darken-1 font-weight-light">Suivez vos aventures à travers le monde</p>
           </div>
 
