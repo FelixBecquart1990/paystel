@@ -22,7 +22,7 @@ export default defineConfig({
     }),
     vueDevTools(),
   ],
-  base: '/main/', // important for GitHub Pages!
+  base: '/paystel/', // important for GitHub Pages!
   build: {
     outDir: 'docs', // 👈 this is the key change
   },
