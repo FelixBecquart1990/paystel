@@ -273,14 +273,14 @@ onMounted(() => {
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="orange" class="mb-2">{{ mdiAccount }}</v-icon>
-                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
+                <div class="text-h5 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
                 <div class="text-body-2 text-grey-darken-1">Ratio Population</div>
               </v-card>
             </v-col>
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="purple" class="mb-2">{{ mdiMapMarkerRadius }}</v-icon>
-                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ areaRatio }}%</div>
+                <div class="text-h5 font-weight-bold text-grey-darken-1">{{ areaRatio }}%</div>
                 <div class="text-body-2 text-grey-darken-1">Ratio Superficie</div>
               </v-card>
             </v-col>
