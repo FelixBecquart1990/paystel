@@ -1,7 +1,8 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
 import countries from '@/data/pays.json'
-import { mdiPlus, mdiMapMarker, mdiCalendar, mdiFlag, mdiDelete, mdiEarth, mdiMagnify, mdiParking, mdiInformation } from '@mdi/js'
+import totals from '@/data/totals.json'
+import { mdiAccount, mdiCalendar, mdiDelete, mdiEarth, mdiFlag, mdiInformation, mdiMagnify, mdiMapMarker, mdiMapMarkerRadius, mdiParking, mdiPlus } from '@mdi/js'
+import { computed, onMounted, ref } from 'vue'
 
 // Reactive data
 const dialog = ref(false)
@@ -57,6 +58,42 @@ const paystelIndicator = computed(() => {
   const currentAge = new Date().getFullYear() - userBirthYear.value
   if (currentAge <= 0) return 0
   return (uniqueCountries.value / currentAge).toFixed(2)
+})
+
+// Population ratio: visited countries population / world population (%)
+const populationRatio = computed(() => {
+  const uniqueCountries = new Set()
+  const visitedPopulation = visitedPlaces.value
+    .filter(v => v.country.état && v.country.population)
+    .reduce((total, visit) => {
+      // Only count each country once
+      if (!uniqueCountries.has(visit.country.nom)) {
+        uniqueCountries.add(visit.country.nom)
+        return total + visit.country.population
+      }
+      return total
+    }, 0)
+
+  return totals.populationsQuantité > 0 ?
+    ((visitedPopulation / totals.populationsQuantité) * 100).toFixed(2) : 0
+})
+
+// Area ratio: visited countries area / world area (%)
+const areaRatio = computed(() => {
+  const uniqueCountries = new Set()
+  const visitedArea = visitedPlaces.value
+    .filter(v => v.country.état && v.country['km²'])
+    .reduce((total, visit) => {
+      // Only count each country once
+      if (!uniqueCountries.has(visit.country.nom)) {
+        uniqueCountries.add(visit.country.nom)
+        return total + visit.country['km²']
+      }
+      return total
+    }, 0)
+
+  return totals.supérficiesQuantité > 0 ?
+    ((visitedArea / totals.supérficiesQuantité) * 100).toFixed(2) : 0
 })
 
 // Calculate current age
@@ -233,11 +270,18 @@ onMounted(() => {
                 <div class="text-body-2 text-grey-darken-1">Pays</div>
               </v-card>
             </v-col>
-            <v-col cols="12" md="4">
+            <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
-                <v-icon size="32" color="info" class="mb-2">{{ mdiCalendar }}</v-icon>
-                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ uniqueYears }}</div>
-                <div class="text-body-2 text-grey-darken-1">Années de Voyage</div>
+                <v-icon size="32" color="orange" class="mb-2">{{ mdiAccount }}</v-icon>
+                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
+                <div class="text-body-2 text-grey-darken-1">Ratio Population</div>
+              </v-card>
+            </v-col>
+            <v-col cols="6" md="4">
+              <v-card class="text-center pa-4" elevation="2" rounded="xl">
+                <v-icon size="32" color="purple" class="mb-2">{{ mdiMapMarkerRadius }}</v-icon>
+                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ areaRatio }}%</div>
+                <div class="text-body-2 text-grey-darken-1">Ratio Superficie</div>
               </v-card>
             </v-col>
           </v-row>
