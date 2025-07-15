@@ -43,7 +43,7 @@ const sortedVisitedPlaces = computed(() => {
 
 // Statistics
 const uniqueCountries = computed(() => {
-  const countries = new Set(visitedPlaces.value.filter(v => v.country.état).map(v => v.country.nom))
+  const countries = new Set(visitedPlaces.value.map(v => v.country.nom))
   return countries.size
 })
 
@@ -57,7 +57,7 @@ const paystelIndicator = computed(() => {
   if (!userBirthYear.value || userBirthYear.value <= 0) return 0
   const currentAge = new Date().getFullYear() - userBirthYear.value
   if (currentAge <= 0) return 0
-  return (uniqueCountries.value / currentAge).toFixed(2)
+  return (uniqueCountries.value / currentAge).toFixed(2).replace('.', ',')
 })
 
 // Population ratio: visited countries population / world population (%)
@@ -75,7 +75,7 @@ const populationRatio = computed(() => {
     }, 0)
 
   return totals.populationsQuantité > 0 ?
-    ((visitedPopulation / totals.populationsQuantité) * 100).toFixed(2) : 0
+    Math.round((visitedPopulation / totals.populationsQuantité) * 100) : 0
 })
 
 // Area ratio: visited countries area / world area (%)
@@ -92,8 +92,8 @@ const areaRatio = computed(() => {
       return total
     }, 0)
 
-  return totals.superficiesQuantité > 0 ?
-    ((visitedArea / totals.superficiesQuantité) * 100).toFixed(2) : 0
+  return totals.supérficiesQuantité > 0 ?
+    Math.round((visitedArea / totals.supérficiesQuantité) * 100) : 0
 })
 
 // Calculate current age
@@ -256,31 +256,24 @@ onMounted(() => {
                 </div>
               </v-card>
             </v-col>
-            <v-col cols="6" md="4">
-              <v-card class="text-center pa-4" elevation="2" rounded="xl">
-                <v-icon size="32" color="primary" class="mb-2">{{ mdiMapMarker }}</v-icon>
-                <div class="text-h4 font-weight-bold text-primary">{{ visitedPlaces.length }}</div>
-                <div class="text-body-2 text-grey-darken-1">Lieux Visités</div>
-              </v-card>
-            </v-col>
-            <v-col cols="6" md="4">
+            <v-col cols="12" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="success" class="mb-2">{{ mdiFlag }}</v-icon>
                 <div class="text-h4 font-weight-bold text-grey-darken-1">{{ uniqueCountries }}</div>
-                <div class="text-body-2 text-grey-darken-1">Pays</div>
+                <div class="text-body-2 text-grey-darken-1">Pays & Territoires</div>
               </v-card>
             </v-col>
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="orange" class="mb-2">{{ mdiAccountGroup }}</v-icon>
-                <div class="text-h5 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
+                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
                 <div class="text-body-2 text-grey-darken-1">Ratio Population</div>
               </v-card>
             </v-col>
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="purple" class="mb-2">{{ mdiMapMarkerRadius }}</v-icon>
-                <div class="text-h5 font-weight-bold text-grey-darken-1">{{ areaRatio }}%</div>
+                <div class="text-h4 font-weight-bold text-grey-darken-1">{{ areaRatio }}%</div>
                 <div class="text-body-2 text-grey-darken-1">Ratio Superficie</div>
               </v-card>
             </v-col>
@@ -334,7 +327,7 @@ onMounted(() => {
                   </div>
 
                   <div v-if="visit.country.population" class="text-body-2 text-grey-darken-1">
-                    Population : {{ visit.country.population.toLocaleString() }}
+                    Population : {{ visit.country.population.toLocaleString('fr-FR') }}
                   </div>
                 </div>
 
