@@ -1,7 +1,7 @@
 <script setup>
 import countries from '@/data/pays.json'
 import totals from '@/data/totals.json'
-import { mdiAccount, mdiCalendar, mdiDelete, mdiEarth, mdiFlag, mdiInformation, mdiMagnify, mdiMapMarker, mdiMapMarkerRadius, mdiParking, mdiPlus } from '@mdi/js'
+import { mdiAccountGroup, mdiCalendar, mdiDelete, mdiEarth, mdiFlag, mdiInformation, mdiMagnify, mdiMapMarker, mdiMapMarkerRadius, mdiParking, mdiPlus } from '@mdi/js'
 import { computed, onMounted, ref } from 'vue'
 
 // Reactive data
@@ -92,8 +92,8 @@ const areaRatio = computed(() => {
       return total
     }, 0)
 
-  return totals.supérficiesQuantité > 0 ?
-    ((visitedArea / totals.supérficiesQuantité) * 100).toFixed(2) : 0
+  return totals.superficiesQuantité > 0 ?
+    ((visitedArea / totals.superficiesQuantité) * 100).toFixed(2) : 0
 })
 
 // Calculate current age
@@ -272,7 +272,7 @@ onMounted(() => {
             </v-col>
             <v-col cols="6" md="4">
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
-                <v-icon size="32" color="orange" class="mb-2">{{ mdiAccount }}</v-icon>
+                <v-icon size="32" color="orange" class="mb-2">{{ mdiAccountGroup }}</v-icon>
                 <div class="text-h5 font-weight-bold text-grey-darken-1">{{ populationRatio }}%</div>
                 <div class="text-body-2 text-grey-darken-1">Ratio Population</div>
               </v-card>
