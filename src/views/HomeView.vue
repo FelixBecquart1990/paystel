@@ -260,7 +260,7 @@ onMounted(() => {
               <v-card class="text-center pa-4" elevation="2" rounded="xl">
                 <v-icon size="32" color="success" class="mb-2">{{ mdiFlag }}</v-icon>
                 <div class="text-h4 font-weight-bold text-grey-darken-1">{{ uniqueCountries }}</div>
-                <div class="text-body-2 text-grey-darken-1">Pays & Territoires</div>
+                <div class="text-body-2 text-grey-darken-1">Pays</div>
               </v-card>
             </v-col>
             <v-col cols="6" md="4">
